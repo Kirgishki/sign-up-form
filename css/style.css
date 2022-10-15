@@ -90,6 +90,9 @@ main{
     border-radius: 2px;
     margin-right: 20px;
 }
+.form-fields input:not(:focus):not(:placeholder-shown):invalid{
+    background-color: rgb(153, 51, 59);
+}
 .form-row{
     display: flex;
     margin-bottom: 15px;
@@ -115,3 +118,4 @@ main{
     margin-left: 5px;
     color: white;
 }
+
