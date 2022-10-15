@@ -5,18 +5,20 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     background-color: rgb(37, 33, 33);
     height: 100vh;
+    justify-content: center;
     align-items: center;
     display: flex;
 }
 main{
-    width: 1200px;
     height: 900px;
-    margin: 0px auto;
+    width: 1200px;
     display: flex;
+    box-sizing: border-box;
 }
 #banner{
     width: 400px;
@@ -27,6 +29,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 #logo{
     display: flex;
@@ -47,5 +51,67 @@ main{
 }
 #formContainer{
     width: 800px;
-    background-color: #4b4b4b;
+    background-color: #2a1438;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(122, 131, 204);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+#formContainer h2{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+#textContainer{
+    padding-left: 30px;
+    width: 700px;
+    font-size: 1.4rem;
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+#textContainer p:last-child{
+    margin-top: 30px;
+}
+.form-fields{
+    padding: 10px 0px 20px 30px;
+}
+.form-fields label{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.form-fields input{
+    padding: 5px;
+    width: 250px;
+    border: none;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+.form-row{
+    display: flex;
+    margin-bottom: 15px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+#btnSubmit{
+    margin-left: 30px;
+    margin-bottom: 40px;
+    background-color: rgb(122, 131, 204);
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+#logIn{
+    margin-left: 30px;
+    display: flex;
+}
+#logIn a{
+    margin-left: 5px;
+    color: white;
 }
